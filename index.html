@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="fonts/OpenSans/opensans.css">
+		<link rel="stylesheet" href="css/GlobalStyles.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+		<title>
+			Ресторан
+		</title>
+		<link rel="icon" href="img/18.png">
+	</head>
+	<body>
+		<div class="big position-stick back-black" style='z-index: 20'>
+			<div class="top-panel">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-3">
+							<img src="img/13.png" alt="">
+						</div>
+						<div class="col-xl-6">
+							<ul class='display-flex white' id='color-selector'>
+								<a href="#main-block">
+									<li class='scale-big'>
+										ГЛАВНАЯ
+									</li>
+								</a>
+								<a href="#about">
+									<li class='scale-big'>
+										О НАС
+									</li>
+								</a>
+								<a href="#eat-menu">
+									<li class='scale-big'>
+										МЕНЮ
+									</li>
+								</a>
+								<a href="">
+									<li class='scale-big'>
+										БРОНЬ
+									</li>
+								</a>
+								<li>
+									<img src="img/15.png" alt="">
+								</li>
+							</ul>
+						</div>
+						<div class="col-xl-3">
+							<img src="img/14.png" alt="">
+							<button class="orange">
+								ЗАКАЗ СТОЛИКА
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="position-stick smole full full-h back-black" id="navigator">
+			<div>
+				<ul class='white'>
+					<a href='#main-block'>
+						<li href="" class='scale-big'>
+							ГЛАВНАЯ
+						</li>
+					</a>
+					
+					<a href="#about">
+						<li class='scale-big'>
+							МЕНЮ
+						</li>
+					</a>
+					<a href="#eat-menu">
+						<li class='scale-big'>
+							О НАС
+						</li>
+					</a>
+					<a href="">
+						<li class='scale-big'>
+							БРОНЬ
+						</li>
+					</a>
+					<li>
+						<button onclick='close_navigation()' class='orange'>
+							Закрыть меню
+						</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class='back-img first_block' id='main-block'>
+			<div class="big">
+				<div class="container">
+					<div class="row">
+						<div class="col-xxl-1 col-xl-1 col-lg-1 col-md-12 col-sm-12 col-12"></div>
+						<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+							<p class='orange font-s-50'>
+								Добро пожаловать в
+							</p>					
+							<p class='orange font-s-80'>
+								Наш ресторан
+							</p>
+							<p class='white lines'>
+								ДОМ ЛУЧШЕЙ ЕДЫ
+							</p>
+							<button class='orange' onclick="open_menu()">
+								Посмотреть меню
+							</button>
+						</div>
+						<div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="smole">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<p>
+								<span class='orange font-s-30'>
+									Добро пожаловать в наш ресторан 
+								</span>
+								<br>
+								<span class='white font-s-40'>
+									"ДОМ ЛУЧШЕЙ ЕДЫ"!
+								</span>
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<button class='orange' onclick='open_navigation()'>
+								Открыть навигацию
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+			  	<div class="carousel-inner">
+			    	<div class="carousel-item active">
+			    		<div class="add">
+							<p class='center'>
+								<img src="img/2.png" alt="">
+							</p>
+							<p class='font-s-30'>
+								Магическая Атмосфера
+							</p>
+							<p class='gray font-s-20'>
+								В нашем заведении царит 
+								<br>
+								магическая атмосфера
+								<br>
+								наполненная вкусными
+								<br>
+								ароматами
+							</p>
+						</div>
+			    	</div>
+			    	<div class="carousel-item">
+			    		<div class="add">
+							<p class='center'>
+								<img src="img/2.png" alt="">
+							</p>
+							<p class='font-s-30'>
+								Лучшее качество Еды
+							</p>
+							<p class='gray font-s-20'>
+								Качество нашей
+								<br>
+								Еды - отменное!
+							</p>
+						</div>
+			    	</div>
+			    	<div class="carousel-item">
+			    		<div class="add">
+							<p class='center'>
+								<img src="img/2.png" alt="">
+							</p>
+							<p class='font-s-30'>
+								Недорогая Еда
+							</p>
+							<p class='gray font-s-20'>
+								Стоимость нашей Еды
+								<br>
+								зависит только от ее
+								<br>
+								количества. Качество всегда
+								<br>
+								на высоте!
+							</p>
+						</div>
+			    	</div>
+			  	</div>
+			</div>
+		</div>
+		<div class='second_block' id='about'>
+			<div class="container">
+				<div class="row">
+					<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+						<p class='font-s-50'>
+							Наша 
+							<span class='orange'>
+								История
+							</span>
+						</p>
+						<p class='gray'>
+							Как и у любого другого самобытного места, у нас есть своя, особая история. Идея ресторана пришла основателям неожиданно. Во время прогулки по лесу создатель нашего ресторана застрял в сотнях километров от ближайшего населенного пункта. Вдали от цивилизации и связи им пришлось навремя обустровать себе нехитрый быт, добывать и готовить себе еду.
+						</p>
+						<table class='full'>
+							<tr class='orange font-s-40 center'>
+								<td>
+									93
+								</td>
+								<td>
+									206
+								</td>
+								<td>
+									71
+								</td>
+							</tr>
+							<tr class='font-s-20'>
+								<td>
+									Напитки
+								</td>
+								<td>
+									Еда
+								</td>
+								<td>
+									Закуски
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+						<img src="img/3.png" alt="" class='img-3'>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="back-black third_block_ hidden">
+			<div class="container position-abso">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 left big">
+						<p class='orange font-s-40 left'>
+							Отпразднуйте в одном из <br>самых лучших ресторанов.
+						</p>
+						<p class='white font-s-20 left'>Только в этом месяце бизнес-ланч от 250 ₽</p>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+						<button class='orange'>
+							Заказ столика
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class='third_block back-img'>
+				
+			</div>
+		</div>
+		<div id='eat-menu'>
+			<div class="container fourth_block">
+				<div class="row">
+					<div class="col">
+						<p class='font-s-50'>
+							НАШИ<span class='orange'>
+									БЛЮДА
+								</span>	
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4col-xxl-4">
+						<img src="img/5.png" alt="">						
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8">
+						<table>
+							<tr>
+							    <td>
+							    	<img src="img/6.png" alt=""> Гамбургер мини 220₽
+							    </td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/6.png" alt="" class='img'> Гамбургер мини 220₽
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/6.png" alt="" class='img'> Гамбургер мини 220₽
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='fifth_block back-img'>
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h1 class='white'>
+							Наше меню
+						</h1>
+					</div>
+				</div>
+				<div class="row" style='margin-top: 138px'>
+					<div class="col">
+						
+					</div>
+					<div class="col">
+						<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  							<div class="carousel-inner">
+    							<div class="carousel-item active back-white">
+      								<div>
+      									<div>
+      										<span class='circle position-abso center font-s-30' style='background-color: #D67E35; height: 100px; width: 100px; margin-top: 130px; margin-left: 130px; padding-top: 30px; color: white'>
+      											420
+      										</span>
+      										<img src="img/8.png" alt="" class='circle'>
+      										
+      									</div>
+      									<p>
+      										Гамбугер Макси
+      									</p>
+      									<p>
+      										Максимально толстый слой мяса
+      									</p>
+      									<button class='orange'>
+      										ЗАКАЗАТЬ
+      									</button>
+      								</div>
+    							</div>
+    							<div class="carousel-item back-white">
+      								<div>
+      									<div>
+      										<span class='circle position-abso center font-s-30' style='background-color: #D67E35; height: 100px; width: 100px; margin-top: 130px; margin-left: 130px; padding-top: 30px; color: white'>
+      											420
+      										</span>
+      										<img src="img/8.png" alt="" class='circle'>
+      										
+      									</div>
+      									<p>
+      										Гамбугер Макси
+      									</p>
+      									<p>
+      										Максимально толстый слой мяса
+      									</p>
+      									<button class='orange'>
+      										ЗАКАЗАТЬ
+      									</button>
+      								</div>
+    							</div>
+    							<div class="carousel-item back-white">
+      								<div>
+      									<div>
+      										<span class='circle position-abso center font-s-30' style='background-color: #D67E35; height: 100px; width: 100px; margin-top: 130px; margin-left: 130px; padding-top: 30px; color: white'>
+      											420
+      										</span>
+      										<img src="img/8.png" alt="" class='circle'>
+      										
+      									</div>
+      									<p>
+      										Гамбугер Макси
+      									</p>
+      									<p>
+      										Максимально толстый слой мяса
+      									</p>
+      									<button class='orange'>
+      										ЗАКАЗАТЬ
+      									</button>
+      								</div>
+    							</div>
+  							</div>
+  							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    							<span class="visually-hidden">Previous</span>
+  							</button>
+  							<button class="carousel-control-next white" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    							<span class="visually-hidden">Next</span>
+  							</button>
+						</div>
+					</div>
+					<div class="col">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='sixth_block'>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 col-xxl-2">
+						
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8">
+						<p>
+							Я надолго запомню мой День рождения, проведённый в этом ресторане! Кусочек родной Армении!!! Отдельное спасибо за комплепент в виде фруктовой тарелки. Будем рекомендовать этот ресторан своим друзьям и родственникам также за рубежом, путешествующих в Санкт-Петербург!!!
+						</p>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 col-xxl-2">
+						
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<img src="img/9.png" alt="" class='circle'>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<h4>
+							Посетитель
+						</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<h5>
+							Николай
+						</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='seventh_block'>
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<p class="font-s-50">
+							Галерея <span class="orange">Блюд</span>
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<img src="img/16.png" alt="">
+					</div>
+					<div class="col">
+						<img src="img/17.png" alt="">
+					</div>
+					<div class="col">
+						<img src="img/17.png" alt="">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<img src="img/17.png" alt="">
+					</div>
+					<div class="col">
+						<img src="img/18.png" alt="">
+					</div>
+					<div class="col">
+						<img src="img/16.png" alt="">
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col">
+						<p class="font-s-50">
+							Наши <span class="orange">Повара</span>
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<img src="img/19.png" alt="">
+					</div>
+					<div class="col">
+						<img src="img/20.png" alt="">
+					</div>
+					<div class="col">
+						<img src="img/21.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='eighth_block back-img'>
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/wow.min.js">
+			
+		</script>
+        <script>
+            new WOW().init();
+        </script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+		<script src='js/codestyle.js'>
+			
+		</script>
+	</body>
+</html>

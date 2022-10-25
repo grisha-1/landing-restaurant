@@ -1,0 +1,148 @@
+body{
+	overflow-x: hidden;
+}
+
+div.back-img{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%
+}
+
+.orange{
+	color: #D67E35;
+}
+
+.gray{
+	color: #656363;
+}
+
+button.orange{
+	background-color: #D67E35;
+	color: #FFFFFF;
+	padding: 14px 28px 14px 28px;
+}
+
+.position-abso{
+	position: absolute;
+}
+
+.position-stick{
+	position: sticky;
+	top: 0px;
+}
+
+.display-flex{
+	display: flex;
+}
+
+.position-rel{
+	position: relative;
+}
+
+*{
+	text-align: center;
+}
+
+.lines:before{
+	content: "----------";
+}
+
+.lines:after{
+	content: "----------";
+}
+
+.font-s-20{
+	font-size: 20px;
+	line-height: 23px;
+}
+
+.font-s-30{
+	font-size: 30px;
+	line-height: 34px;
+}
+
+.font-s-40{
+	font-size: 40px;
+	line-height: 45px;
+}
+
+.font-s-50{
+	font-size: 50px;
+	line-height: 57px;
+}
+
+.font-s-60{
+	font-size: 60px;
+}
+
+.font-s-70{
+	font-size: 70px;
+}
+
+.font-s-80{
+	font-size: 80px;
+	line-height: 92px;
+}
+
+.center{
+	text-align: center;
+}
+
+.full{
+	width: 100%;
+}
+
+.full-h{
+	min-height: 100%;
+}
+
+.back-black{
+	background-color: black;
+}
+
+.back-white{
+	background-color: white;
+}
+
+.white{
+	color: white;
+}
+
+ul{
+	list-style: none;
+}
+
+li{
+	margin-left: 40px;
+}
+
+.invisible{
+	display: none;
+}
+
+.left{
+	text-align: left;
+}
+
+.hidden{
+	overflow: hidden;
+}
+
+.circle{
+	border-radius: 100%;
+}
+
+.scale-big{
+	color: white;
+	transition: transform 1s;
+}
+
+.scale-big:hover{
+	transition: transform 1s;
+	color: red;
+	transform: scale(1.4, 1.4);
+}
+
+a{
+	color: white;
+}

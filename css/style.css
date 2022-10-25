@@ -1,0 +1,108 @@
+div.top-panel{
+	background-color: black;
+	padding-top: 55px;
+	padding-bottom: 10px;
+	z-index: 2;
+}
+
+#navigator{
+	z-index: 2;
+}
+
+div.top-panel ul{
+	border-right: 1px solid #FFFFFF;
+}
+
+div.first_block{
+	background-image: url(../img/1.png);
+	height: 800px;
+	padding-top: 122px;
+}
+
+.add{
+	width: 328px;
+	height: 309px;
+	background-color: white;
+	box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+	margin-top: 100px;
+	padding-top: 30px;
+	z-index: 1;
+	margin-left: calc(50vw - 164px);
+}
+
+div.second_block{
+	padding-top: 371px;
+	padding-bottom: 182px;
+}
+
+.smole{
+	display: none;
+	position: absolute;
+}
+
+@media(max-width: 600px){
+	.img-3{
+		width: 90%;
+	}
+	.big{
+		display: none;
+		position: absolute;
+	}
+	.smole{
+		display: block;
+		position: static;
+	}
+}
+
+.third_block{
+	background: url("../img/4.png");
+	height: 357px;
+	opacity: 0.1;
+}
+
+.third_block_ p{
+	margin-left: 10%;
+	margin-top: 10%;
+}
+
+.fourth_block{
+	padding: 130px 0px 130px 0px;
+	overflow-x: hidden;
+}
+
+.third_block_ button{
+	margin-top: 150px;
+}
+
+.fourth_block table img.img{
+	margin-top: 24px;
+}
+
+.fourth_block table img{
+	margin-left: 40px;
+}
+
+.fifth_block{
+	background-image: url(../img/7.png);
+	height: 1036px;
+	padding-top: 100px;
+}
+
+div.fifth_block div.carousel-item{
+	width: 350px;
+	height: 510px;
+	padding: 80px 62px 29px 63px;
+}
+
+div.sixth_block{
+	padding: 130px 0px 130px 0px;
+}
+
+div.seventh_block img{
+	margin-bottom: 30px;
+}
+
+div.eighth_block{
+	background-image: url("../img/12.png");
+	height: 732px;
+}
